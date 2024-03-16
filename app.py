@@ -39,9 +39,9 @@ if selected == 'Diabetes Prediction':
     st.caption("MCT RGIT Computer Engineering Department's")
     st.title('Multiple Disease Prognosis using Machine Learning')
     st.header("✅verified by top medical consultants")
-    st.caption('by Aryan Panchal B609')
-    st.caption('Jash Panchal B610')
-    st.caption('Ashlesha Padvi B606')
+    st.text('by Aryan Panchal B609')
+    st.text('Jash Panchal B610')
+    st.text('Ashlesha Padvi B606')
     st.text('Guide: Dr. Sharmila Rathod')
 
 
