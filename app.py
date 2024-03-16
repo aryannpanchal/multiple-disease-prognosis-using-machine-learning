@@ -91,7 +91,7 @@ if selected == 'Diabetes Prediction':
 
         if diab_prediction[0] == 1:
             diab_diagnosis = 'The person is diabetic'
-            st.subheader('_Suggestions and inputs from our associated doctors: _')
+            st.subheader('_Suggestions and inputs from our associated doctors:_')
 
         else:
             diab_diagnosis = 'The person is not diabetic'
