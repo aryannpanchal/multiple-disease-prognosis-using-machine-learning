@@ -22,7 +22,7 @@ parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_mode
 
 # sidebar for navigation
 with st.sidebar:
-    selected = option_menu('Multiple Disease Prediction System',
+    selected = option_menu('Innovative Strategies for Multiple Disease Prognosis',
 
                            ['Diabetes Prediction',
                             'Heart Disease Prediction',
