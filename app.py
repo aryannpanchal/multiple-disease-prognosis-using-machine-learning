@@ -36,7 +36,7 @@ with st.sidebar:
 if selected == 'Diabetes Prediction':
 
     # page title
-    st.image('college-logo.svg')
+    st.image('college-logo.jpg')
     st.title('Multiple Disease Prognosis using Machine Learning')
     st.caption('by Aryan Panchal B609')
     st.caption('Jash Panchal B610')
