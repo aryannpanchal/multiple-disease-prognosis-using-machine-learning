@@ -93,7 +93,7 @@ if selected == 'Diabetes Prediction':
             diab_diagnosis = 'The person is diabetic (ML Model Accuracy: 87%)'
             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
             st.caption("personalised prognosis (refer your blood reports)")
-            st.text("If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PREDIABETIC]")
+            st.markdown("If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PREDIABETIC]")
 
         else:
             diab_diagnosis = 'The person is not diabetic'
