@@ -90,7 +90,7 @@ if selected == 'Diabetes Prediction':
         diab_prediction = diabetes_model.predict([user_input])
 
         if diab_prediction[0] == 1:
-            diab_diagnosis = 'The person is diabetic (ML Model Accuracy: 87%)'
+            diab_diagnosis = 'The person is diabetic (ML Model Accuracy: {training_data_accuracy})'
             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
             st.caption("personalised prognosis (refer your blood reports)")
             st.markdown("➡ If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PRE-DIABETIC]")
