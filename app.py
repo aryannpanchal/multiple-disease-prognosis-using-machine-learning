@@ -36,7 +36,7 @@ with st.sidebar:
 if selected == 'Diabetes Prediction':
 
     # page title
-    st.image('college-logo.jpg')
+    st.caption("MCT RGIT Computer Engineering Department's")
     st.title('Multiple Disease Prognosis using Machine Learning')
     st.caption('by Aryan Panchal B609')
     st.caption('Jash Panchal B610')
@@ -91,7 +91,7 @@ if selected == 'Diabetes Prediction':
 
         if diab_prediction[0] == 1:
             diab_diagnosis = 'The person is diabetic'
-            st.caption('hello')
+            st.subheader('_Suggestions and inputs from our associated doctors: _')
 
         else:
             diab_diagnosis = 'The person is not diabetic'
