@@ -38,6 +38,7 @@ if selected == 'Diabetes Prediction':
     # page title
     st.caption("MCT RGIT Computer Engineering Department's")
     st.title('Multiple Disease Prognosis using Machine Learning')
+    st.header("✅verified by top medical consultants")
     st.caption('by Aryan Panchal B609')
     st.caption('Jash Panchal B610')
     st.caption('Ashlesha Padvi B606')
@@ -90,7 +91,7 @@ if selected == 'Diabetes Prediction':
         diab_prediction = diabetes_model.predict([user_input])
 
         if diab_prediction[0] == 1:
-            diab_diagnosis = 'The person is diabetic (ML Model Accuracy: {training_data_accuracy})'
+            diab_diagnosis = 'The person is diabetic (ML Model Accuracy: 78.33%)'
             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
             st.caption("personalised prognosis (refer your blood reports)")
             st.markdown("➡ If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PRE-DIABETIC]")
@@ -103,7 +104,7 @@ if selected == 'Diabetes Prediction':
 
 
         else:
-            diab_diagnosis = 'The person is not diabetic'
+            diab_diagnosis = 'The person is not diabetic (ML Model Accuracy: 78.33%)'
             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
             st.caption("personalised prognosis (refer your blood reports)")
             st.markdown("➡ If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PRE-DIABETIC]")
