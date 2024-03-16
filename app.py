@@ -255,6 +255,7 @@ if selected == "Parkinsons Prediction":
             st.caption('hello')
         else:
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
+            st.caption('bye')
 
     st.success(parkinsons_diagnosis)
     
