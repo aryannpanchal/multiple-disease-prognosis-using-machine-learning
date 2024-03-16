@@ -90,8 +90,11 @@ if selected == 'Diabetes Prediction':
 
         if diab_prediction[0] == 1:
             diab_diagnosis = 'The person is diabetic'
+            st.caption('hello')
+
         else:
             diab_diagnosis = 'The person is not diabetic'
+            st.caption('hello')
 
     st.success(diab_diagnosis)
 
@@ -157,8 +160,11 @@ if selected == 'Heart Disease Prediction':
 
         if heart_prediction[0] == 1:
             heart_diagnosis = 'The person is having heart disease'
+            st.caption('hello')
+
         else:
             heart_diagnosis = 'The person does not have any heart disease'
+            st.caption('hello')
 
     st.success(heart_diagnosis)
 
