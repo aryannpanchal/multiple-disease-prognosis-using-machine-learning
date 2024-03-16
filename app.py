@@ -41,6 +41,9 @@ if selected == 'Diabetes Prediction':
     st.caption('Jash Panchal B610')
     st.caption('Ashlesha Padvi B606')
 
+  st.text('Guide: Dr. Sharmila Rathod')
+
+
 
 
 
