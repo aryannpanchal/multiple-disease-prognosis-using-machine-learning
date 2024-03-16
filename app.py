@@ -37,9 +37,9 @@ if selected == 'Diabetes Prediction':
 
     # page title
     st.title('Multiple Disease Prognosis using Machine Learning')
-  st.caption('by Aryan Panchal B609')
-  st.caption('Jash Panchal B610')
-  st.caption('Ashlesha Padvi B606')
+    st.caption('by Aryan Panchal B609')
+    st.caption('Jash Panchal B610')
+    st.caption('Ashlesha Padvi B606')
 
 
 
