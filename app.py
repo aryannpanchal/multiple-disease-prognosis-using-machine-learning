@@ -90,7 +90,7 @@ if selected == 'Diabetes Prediction':
         diab_prediction = diabetes_model.predict([user_input])
 
         if diab_prediction[0] == 1:
-            diab_diagnosis = 'The person is diabetic'
+            diab_diagnosis = 'The person is diabetic (ML Model Accuracy: 87%)'
             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
 
         else:
