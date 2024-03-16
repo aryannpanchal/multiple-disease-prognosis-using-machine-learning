@@ -38,7 +38,7 @@ if selected == 'Diabetes Prediction':
     # page title
     st.caption("MCT RGIT Computer Engineering Department's")
     st.title('Multiple Disease Prognosis using Machine Learning')
-    st.header("✅verified by top medical consultants")
+    st.header("✅ verified by top medical consultants")
     st.text('Guide: Dr. Sharmila Rathod')
     st.text('Aryan Panchal B609')
     st.text('Jash Panchal B610')
@@ -124,7 +124,7 @@ if selected == 'Heart Disease Prediction':
     # page title
     st.caption("MCT RGIT Computer Engineering Department's")
     st.title('Multiple Disease Prognosis using Machine Learning')
-    st.header("✅verified by top medical consultants")
+    st.header("✅ verified by top medical consultants")
     st.text('Guide: Dr. Sharmila Rathod')
     st.text('Aryan Panchal B609')
     st.text('Jash Panchal B610')
@@ -200,7 +200,7 @@ if selected == "Parkinsons Prediction":
     # page title
     st.caption("MCT RGIT Computer Engineering Department's")
     st.title('Multiple Disease Prognosis using Machine Learning')
-    st.header("✅verified by top medical consultants")
+    st.header("✅ verified by top medical consultants")
     st.text('Guide: Dr. Sharmila Rathod')
     st.text('Aryan Panchal B609')
     st.text('Jash Panchal B610')
