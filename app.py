@@ -122,7 +122,13 @@ if selected == 'Diabetes Prediction':
 if selected == 'Heart Disease Prediction':
 
     # page title
-    st.title('Heart Disease Prediction using ML')
+    st.caption("MCT RGIT Computer Engineering Department's")
+    st.title('Multiple Disease Prognosis using Machine Learning')
+    st.header("✅verified by top medical consultants")
+    st.text('Guide: Dr. Sharmila Rathod')
+    st.text('Aryan Panchal B609')
+    st.text('Jash Panchal B610')
+    st.text('Ashlesha Padvi B606')
 
     col1, col2, col3 = st.columns(3)
 
@@ -192,8 +198,14 @@ if selected == 'Heart Disease Prediction':
 if selected == "Parkinsons Prediction":
 
     # page title
-    st.title("Parkinson's Disease Prediction using ML")
-
+    st.caption("MCT RGIT Computer Engineering Department's")
+    st.title('Multiple Disease Prognosis using Machine Learning')
+    st.header("✅verified by top medical consultants")
+    st.text('Guide: Dr. Sharmila Rathod')
+    st.text('Aryan Panchal B609')
+    st.text('Jash Panchal B610')
+    st.text('Ashlesha Padvi B606')
+    
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
