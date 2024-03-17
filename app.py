@@ -97,7 +97,7 @@ if selected == 'Diabetes Prediction':
             st.caption("personalised prognosis (refer your blood reports)")
             st.markdown("➡ If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PRE-DIABETIC]")
             st.markdown("➡ If fasting blood sugar is numerically >126 then patient is :red[100% DIABETIC]")
-            st.markdown("➡ If fasting blood sugar is numerically between 70-100 then patient is :green[0% NON-DIABETIC]")
+            st.markdown("➡ If fasting blood sugar is numerically between 70-100 then patient is :green[100% NON-DIABETIC]")
             st.text("")
             st.markdown("➡ If post lunch blood sugar is numerically 140-200 then patient is :blue[100% PRE-DIABETIC]")
             st.markdown("➡ If post lunch blood sugar is numerically >200 then patient is :red[100% DIABETIC]")
