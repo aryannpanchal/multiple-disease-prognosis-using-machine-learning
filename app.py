@@ -185,12 +185,10 @@ if selected == 'Heart Disease Prediction':
         heart_prediction = heart_disease_model.predict([user_input])
 
         if heart_prediction[0] == 1:
-            heart_diagnosis = 'The person is having heart disease'
-            st.caption('hello')
+            heart_diagnosis = 'The person is having heart disease (ML Model accuracy: 85.12%)'
 
         else:
-            heart_diagnosis = 'The person does not have any heart disease'
-            st.caption('hello')
+            heart_diagnosis = 'The person does not have any heart disease (ML Model accuracy: 85.12%)'
 
     st.success(heart_diagnosis)
 
@@ -289,11 +287,9 @@ if selected == "Parkinsons Prediction":
         parkinsons_prediction = parkinsons_model.predict([user_input])
 
         if parkinsons_prediction[0] == 1:
-            parkinsons_diagnosis = "The person has Parkinson's disease"
-            st.caption('hello')
+            parkinsons_diagnosis = "The person has Parkinson's disease (ML Model accuracy: 87.17%)"
         else:
-            parkinsons_diagnosis = "The person does not have Parkinson's disease"
-            st.caption('bye')
+            parkinsons_diagnosis = "The person does not have Parkinson's disease (ML Model accuracy: 87.17%)"
 
     st.success(parkinsons_diagnosis)
     
