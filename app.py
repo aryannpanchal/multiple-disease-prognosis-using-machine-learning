@@ -57,6 +57,12 @@ if selected == 'Diabetes Prediction':
 
     with col2:
         Glucose = st.text_input('Glucose Level (mg/dl)')
+        
+if len(Glucose) >  2:
+    st.error("Please fix")
+else:
+    st.write("Glucose value accepted")
+    # code for Prediction    
 
     with col3:
         BloodPressure = st.text_input('Blood Pressure value (mm Hg)')
@@ -76,12 +82,7 @@ if selected == 'Diabetes Prediction':
     with col2:
         Age = st.text_input('Age of the Person (years)')
 
-if len(Glucose) >  2:
-    st.error("Please fix")
-else:
-    st.write("Glucose value accepted")
-    # code for Prediction
-    
+
     diab_diagnosis = ''
 
     # creating a button for Prediction
