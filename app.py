@@ -56,7 +56,7 @@ if selected == 'Diabetes Prediction':
         Pregnancies = st.text_input('Number of Pregnancies')
         
 if len(Pregnancies) >  1:
-    st.error("Please enter a valid number of pregnancies")
+    st.echo("Please enter a valid number of pregnancies")
 else:
     st.write("")
     
