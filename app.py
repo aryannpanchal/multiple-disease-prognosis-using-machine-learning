@@ -76,11 +76,12 @@ if selected == 'Diabetes Prediction':
     with col2:
         Age = st.text_input('Age of the Person')
 
-if(Glucose) >  2:
+if len(Glucose) >  2:
     st.error("Please fix")
 else:
-    st.success("Glucose value accepted")
+    st.write("Glucose value accepted")
     # code for Prediction
+    
     diab_diagnosis = ''
 
     # creating a button for Prediction
