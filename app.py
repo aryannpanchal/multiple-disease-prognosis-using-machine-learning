@@ -59,7 +59,7 @@ if selected == 'Diabetes Prediction':
         Glucose = st.text_input('Glucose Level (mg/dl)')
         
 if len(Glucose) >  2:
-    st.error("Please fix")
+    st.text("Please fix")
 else:
     st.write("Glucose value accepted")
     # code for Prediction    
