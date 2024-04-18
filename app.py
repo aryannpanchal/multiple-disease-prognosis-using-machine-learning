@@ -58,10 +58,10 @@ if selected == 'Diabetes Prediction':
     with col2:
         Glucose = st.text_input('Glucose Level (mg/dl)')
         
-if len(Glucose) >  2:
-    st.error("Please fix")
+if len(Glucose) >  4:
+    st.error("Please enter a valid Glucose level")
 else:
-    st.write("Glucose value accepted")
+    st.success("Glucose value accepted")
     # code for Prediction    
 
     with col3:
