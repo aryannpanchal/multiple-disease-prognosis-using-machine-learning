@@ -61,7 +61,7 @@ if selected == 'Diabetes Prediction':
 if len(Glucose) >  4:
     st.error("Please enter a valid Glucose level")
 else:
-    st.success("Glucose value accepted")
+    st.write("")
     # code for Prediction    
 
     with col3:
