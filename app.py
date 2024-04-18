@@ -55,7 +55,7 @@ if selected == 'Diabetes Prediction':
     with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
         
-if (Pregnancies) >  10:
+if len(Pregnancies) >  1:
     st.error("Please enter a valid number of pregnancies")
 else:
     st.write("")
