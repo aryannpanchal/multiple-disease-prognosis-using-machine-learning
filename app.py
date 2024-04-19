@@ -79,7 +79,7 @@ with col1:
     else:
      st.write("")
 with col2:
-        Insulin = st.text_input('Insulin Level (mu U/ml)')
+    Insulin = st.text_input('Insulin Level (mu U/ml)')
     if len(Insulin) >  2:
      st.error("Please enter a valid Insulin level")
     else:
@@ -93,7 +93,7 @@ with col3:
 with col1:
         DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
 with col2:
-        Age = st.text_input('Age of the Person (years)')
+    Age = st.text_input('Age of the Person (years)')
     if len(Age) >  3:
      st.error("Please enter a valid age")
     else:
