@@ -137,7 +137,7 @@ if st.button('Diabetes Test Result'):
             st.markdown("➡ If post lunch blood sugar is numerically >200 then patient is :red[100% DIABETIC]")
             st.markdown("➡ If post lunch blood sugar is numerically <140 then patient is :green[100% NON-DIABETIC]") 
 
-st.success(diab_diagnosis)
+ st.success(diab_diagnosis)
 
 # Heart Disease Prediction Page
 if selected == 'Heart Disease Prediction':
