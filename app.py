@@ -55,47 +55,47 @@ col1, col2, col3 = st.columns(3)
 with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
         
-if len(Pregnancies) >  1:
+ if len(Pregnancies) >  1:
      st.write("Please enter a valid number of pregnancies")
-else:
+ else:
     st.write("")
     
 with col2:
         Glucose = st.text_input('Glucose Level (mg/dl)')
         
-if len(Glucose) >  4:
+ if len(Glucose) >  4:
     st.error("Please enter a valid Glucose level")
-else:
+ else:
     st.write("")
     # code for Prediction    
-    with col3:
+with col3:
         BloodPressure = st.text_input('Blood Pressure value (mm Hg)')
-if len(BloodPressure) >  4:
+ if len(BloodPressure) >  4:
     st.error("Please enter a valid bood pressure level")
-else:
+ else:
     st.write("")
-    with col1:
+with col1:
         SkinThickness = st.text_input('Skin Thickness value')
-if len(SkinThickness) >  2:
+ if len(SkinThickness) >  2:
     st.error("Please enter a valid skin thickness value")
-else:
+ else:
     st.write("")
-    with col2:
+with col2:
         Insulin = st.text_input('Insulin Level (mu U/ml)')
-if len(Insulin) >  2:
+ if len(Insulin) >  2:
     st.error("Please enter a valid Insulin level")
-else:
+ else:
     st.write("")
-    with col3:
+with col3:
         BMI = st.text_input('BMI value (kg/m^2)')
-if len(BMI) >  3:
+ if len(BMI) >  3:
     st.error("Please enter a valid BMI")
-else:
+ else:
     st.write("")
-    with col1:
+with col1:
         DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
 
-    with col2:
+with col2:
         Age = st.text_input('Age of the Person (years)')
 if len(Age) >  3:
     st.error("Please enter a valid age")
