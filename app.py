@@ -50,20 +50,20 @@ if selected == 'Diabetes Prediction':
 
 
     # getting the input data from the user
-                col1, col2, col3 = st.columns(3)
-            
+col1, col2, col3 = st.columns(3)
+
                 with col1:
                     Pregnancies = st.text_input('Number of Pregnancies')
-                    
+
             if len(Pregnancies) >  1:
                 with st.echo:
                  st.write("Please enter a valid number of pregnancies")
             else:
                 st.write("")
-                
+
                 with col2:
                     Glucose = st.text_input('Glucose Level (mg/dl)')
-                    
+
             if len(Glucose) >  4:
                 st.error("Please enter a valid Glucose level")
             else:
@@ -95,18 +95,18 @@ if selected == 'Diabetes Prediction':
                 st.write("")
                 with col1:
                     DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
-            
+
                 with col2:
                     Age = st.text_input('Age of the Person (years)')
             if len(Age) >  3:
                 st.error("Please enter a valid age")
             else:
                 st.write("")
-            
+
                 diab_diagnosis = ''
-            
+
                 # creating a button for Prediction
-            
+
                 if st.button('Diabetes Test Result'):
 
         user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
