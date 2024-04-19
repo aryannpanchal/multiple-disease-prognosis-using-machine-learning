@@ -99,18 +99,18 @@ with col2:
     else:
      st.write("")
 
-diab_diagnosis = ''
+    diab_diagnosis = ''
 
     # creating a button for Prediction
 
-if st.button('Diabetes Test Result'):
+    if st.button('Diabetes Test Result'):
 
-    user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
+        user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
                       BMI, DiabetesPedigreeFunction, Age]
 
-    user_input = [float(x) for x in user_input]
+        user_input = [float(x) for x in user_input]
 
-    diab_prediction = diabetes_model.predict([user_input])
+        diab_prediction = diabetes_model.predict([user_input])
 
         if diab_prediction[0] == 1:
             diab_diagnosis = 'The person is diabetic (ML Model Accuracy: 78.33%)'
