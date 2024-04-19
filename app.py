@@ -112,7 +112,7 @@ if st.button('Diabetes Test Result'):
 
  diab_prediction = diabetes_model.predict([user_input])
 
-    if diab_prediction[0] == 1:
+if diab_prediction[0] == 1:
             diab_diagnosis = 'The person is diabetic (ML Model Accuracy: 78.33%)'
             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
             st.caption("personalised prognosis (refer your blood reports)")
@@ -125,7 +125,7 @@ if st.button('Diabetes Test Result'):
             st.markdown("➡ If post lunch blood sugar is numerically <140 then patient is :green[100% NON-DIABETIC]") 
 
 
-    else:
+else:
             diab_diagnosis = 'The person is not diabetic (ML Model Accuracy: 78.33%)'
             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
             st.caption("personalised prognosis (refer your blood reports)")
@@ -137,7 +137,7 @@ if st.button('Diabetes Test Result'):
             st.markdown("➡ If post lunch blood sugar is numerically >200 then patient is :red[100% DIABETIC]")
             st.markdown("➡ If post lunch blood sugar is numerically <140 then patient is :green[100% NON-DIABETIC]") 
 
- st.success(diab_diagnosis)
+st.success(diab_diagnosis)
 
 # Heart Disease Prediction Page
 if selected == 'Heart Disease Prediction':
