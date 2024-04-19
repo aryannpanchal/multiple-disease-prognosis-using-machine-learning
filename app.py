@@ -277,6 +277,10 @@ if selected == "Parkinsons Prediction":
     # code for Prediction
     parkinsons_diagnosis = ''
 
+if count(Pregnancies) > 1:
+    st.error("Please fix the pregnancy value")
+else:
+    st.write("")
     # creating a button for Prediction    
     if st.button("Parkinson's Test Result"):
 
@@ -295,7 +299,3 @@ if selected == "Parkinsons Prediction":
 
     st.success(parkinsons_diagnosis)
     
-if count(Pregnancies) > 1:
-    st.error("Please fix the pregnancy value")
-else:
-    st.write("")
