@@ -53,16 +53,14 @@ if selected == 'Diabetes Prediction':
 col1, col2, col3 = st.columns(3)
 
 with col1:
-        Pregnancies = st.text_input('Number of Pregnancies')
-        
+    Pregnancies = st.text_input('Number of Pregnancies')   
     if len(Pregnancies) >  1:
      st.write("Please enter a valid number of pregnancies")
     else:
      st.write("")
     
 with col2:
-        Glucose = st.text_input('Glucose Level (mg/dl)')
-        
+    Glucose = st.text_input('Glucose Level (mg/dl)')
     if len(Glucose) >  4:
      st.error("Please enter a valid Glucose level")
     else:
