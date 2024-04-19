@@ -89,19 +89,19 @@ else:
     st.write("")
     with col3:
         BMI = st.text_input('BMI value (kg/m^2)')
-            if len(BMI) >  3:
-             st.error("Please enter a valid BMI")
-            else:
-             st.write("")
+if len(BMI) >  3:
+    st.error("Please enter a valid BMI")
+else:
+    st.write("")
     with col1:
         DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
 
     with col2:
         Age = st.text_input('Age of the Person (years)')
-            if len(Age) >  3:
-              st.error("Please enter a valid age")
-             else:
-              st.write("")
+if len(Age) >  3:
+    st.error("Please enter a valid age")
+else:
+    st.write("")
 
     diab_diagnosis = ''
 
