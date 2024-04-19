@@ -103,12 +103,12 @@ diab_diagnosis = ''
 
     # creating a button for Prediction
 
-if st.button('Diabetes Test Result'):
+    if st.button('Diabetes Test Result'):
 
- user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
+        user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
                       BMI, DiabetesPedigreeFunction, Age]
 
- user_input = [float(x) for x in user_input]
+        user_input = [float(x) for x in user_input]
 
         diab_prediction = diabetes_model.predict([user_input])
 
