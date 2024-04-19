@@ -52,92 +52,92 @@ if selected == 'Diabetes Prediction':
     # getting the input data from the user
 col1, col2, col3 = st.columns(3)
 
- with col1:
+with col1:
     Pregnancies = st.text_input('Number of Pregnancies')   
     if len(Pregnancies) >  1:
-     st.error("Please enter a valid number of pregnancies")
+     st.write("Please enter a valid number of pregnancies")
     else:
      st.write("")
-     
- with col2:
+    
+with col2:
     Glucose = st.text_input('Glucose Level (mg/dl)')
     if len(Glucose) >  4:
      st.error("Please enter a valid Glucose level")
     else:
      st.write("")
     # code for Prediction    
- with col3:
+with col3:
     BloodPressure = st.text_input('Blood Pressure value (mm Hg)')
     if len(BloodPressure) >  4:
      st.error("Please enter a valid bood pressure level")
     else:
      st.write("")
- with col1:
+with col1:
     SkinThickness = st.text_input('Skin Thickness value')
     if len(SkinThickness) >  2:
      st.error("Please enter a valid skin thickness value")
     else:
      st.write("")
- with col2:
+with col2:
     Insulin = st.text_input('Insulin Level (mu U/ml)')
     if len(Insulin) >  2:
      st.error("Please enter a valid Insulin level")
     else:
      st.write("")
- with col3:
+with col3:
     BMI = st.text_input('BMI value (kg/m^2)')
     if len(BMI) >  3:
      st.error("Please enter a valid BMI")
     else:
      st.write("")
- with col1:
+with col1:
         DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
- with col2:
+with col2:
     Age = st.text_input('Age of the Person (years)')
     if len(Age) >  3:
      st.error("Please enter a valid age")
     else:
      st.write("")
- 
- diab_diagnosis = ''
- 
-     # creating a button for Prediction
- 
- if st.button('Diabetes Test Result'):
- 
-  user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
-                       BMI, DiabetesPedigreeFunction, Age]
- 
-  user_input = [float(x) for x in user_input]
- 
-  diab_prediction = diabetes_model.predict([user_input])
- 
-  if diab_prediction[0] == 1:
-             diab_diagnosis = 'The person is diabetic (ML Model Accuracy: 78.33%)'
-             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
-             st.caption("personalised prognosis (refer your blood reports)")
-             st.markdown("➡ If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PRE-DIABETIC]")
-             st.markdown("➡ If fasting blood sugar is numerically >126 then patient is :red[100% DIABETIC]")
-             st.markdown("➡ If fasting blood sugar is numerically between 70-100 then patient is :green[100% NON-DIABETIC]")
-             st.text("")
-             st.markdown("➡ If post lunch blood sugar is numerically 140-200 then patient is :blue[100% PRE-DIABETIC]")
-             st.markdown("➡ If post lunch blood sugar is numerically >200 then patient is :red[100% DIABETIC]")
-             st.markdown("➡ If post lunch blood sugar is numerically <140 then patient is :green[100% NON-DIABETIC]") 
- 
- 
-  else:
-             diab_diagnosis = 'The person is not diabetic (ML Model Accuracy: 78.33%)'
-             st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
-             st.caption("personalised prognosis (refer your blood reports)")
-             st.markdown("➡ If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PRE-DIABETIC]")
-             st.markdown("➡ If fasting blood sugar is numerically >126 then patient is :red[100% DIABETIC]")
-             st.markdown("➡ If fasting blood sugar is numerically between 70-100 then patient is :green[0% NON-DIABETIC]")
-             st.text("")
-             st.markdown("➡ If post lunch blood sugar is numerically 140-200 then patient is :blue[100% PRE-DIABETIC]")
-             st.markdown("➡ If post lunch blood sugar is numerically >200 then patient is :red[100% DIABETIC]")
-             st.markdown("➡ If post lunch blood sugar is numerically <140 then patient is :green[100% NON-DIABETIC]") 
- 
- st.success(diab_diagnosis)
+
+diab_diagnosis = ''
+
+    # creating a button for Prediction
+
+if st.button('Diabetes Test Result'):
+
+ user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
+                      BMI, DiabetesPedigreeFunction, Age]
+
+ user_input = [float(x) for x in user_input]
+
+        diab_prediction = diabetes_model.predict([user_input])
+
+        if diab_prediction[0] == 1:
+            diab_diagnosis = 'The person is diabetic (ML Model Accuracy: 78.33%)'
+            st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
+            st.caption("personalised prognosis (refer your blood reports)")
+            st.markdown("➡ If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PRE-DIABETIC]")
+            st.markdown("➡ If fasting blood sugar is numerically >126 then patient is :red[100% DIABETIC]")
+            st.markdown("➡ If fasting blood sugar is numerically between 70-100 then patient is :green[100% NON-DIABETIC]")
+            st.text("")
+            st.markdown("➡ If post lunch blood sugar is numerically 140-200 then patient is :blue[100% PRE-DIABETIC]")
+            st.markdown("➡ If post lunch blood sugar is numerically >200 then patient is :red[100% DIABETIC]")
+            st.markdown("➡ If post lunch blood sugar is numerically <140 then patient is :green[100% NON-DIABETIC]") 
+
+
+        else:
+            diab_diagnosis = 'The person is not diabetic (ML Model Accuracy: 78.33%)'
+            st.subheader('_⚕️Suggestions and inputs from our associated doctors:_')
+            st.caption("personalised prognosis (refer your blood reports)")
+            st.markdown("➡ If fasting blood sugar is numerically between 100-126 then patient is :blue[100% PRE-DIABETIC]")
+            st.markdown("➡ If fasting blood sugar is numerically >126 then patient is :red[100% DIABETIC]")
+            st.markdown("➡ If fasting blood sugar is numerically between 70-100 then patient is :green[0% NON-DIABETIC]")
+            st.text("")
+            st.markdown("➡ If post lunch blood sugar is numerically 140-200 then patient is :blue[100% PRE-DIABETIC]")
+            st.markdown("➡ If post lunch blood sugar is numerically >200 then patient is :red[100% DIABETIC]")
+            st.markdown("➡ If post lunch blood sugar is numerically <140 then patient is :green[100% NON-DIABETIC]") 
+
+    st.success(diab_diagnosis)
 
 # Heart Disease Prediction Page
 if selected == 'Heart Disease Prediction':
