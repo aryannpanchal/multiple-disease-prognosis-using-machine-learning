@@ -50,64 +50,64 @@ if selected == 'Diabetes Prediction':
 
 
     # getting the input data from the user
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
-        Pregnancies = st.text_input('Number of Pregnancies')
-        
-if len(Pregnancies) >  1:
-    with st.echo:
-     st.write("Please enter a valid number of pregnancies")
-else:
-    st.write("")
-    
-    with col2:
-        Glucose = st.text_input('Glucose Level (mg/dl)')
-        
-if len(Glucose) >  4:
-    st.error("Please enter a valid Glucose level")
-else:
-    st.write("")
-    # code for Prediction    
-    with col3:
-        BloodPressure = st.text_input('Blood Pressure value (mm Hg)')
-if len(BloodPressure) >  4:
-    st.error("Please enter a valid bood pressure level")
-else:
-    st.write("")
-    with col1:
-        SkinThickness = st.text_input('Skin Thickness value')
-if len(SkinThickness) >  2:
-    st.error("Please enter a valid skin thickness value")
-else:
-    st.write("")
-    with col2:
-        Insulin = st.text_input('Insulin Level (mu U/ml)')
-if len(Insulin) >  2:
-    st.error("Please enter a valid Insulin level")
-else:
-    st.write("")
-    with col3:
-        BMI = st.text_input('BMI value (kg/m^2)')
-if len(BMI) >  3:
-    st.error("Please enter a valid BMI")
-else:
-    st.write("")
-    with col1:
-        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
-
-    with col2:
-        Age = st.text_input('Age of the Person (years)')
-if len(Age) >  3:
-    st.error("Please enter a valid age")
-else:
-    st.write("")
-
-    diab_diagnosis = ''
-
-    # creating a button for Prediction
-
-    if st.button('Diabetes Test Result'):
+                col1, col2, col3 = st.columns(3)
+            
+                with col1:
+                    Pregnancies = st.text_input('Number of Pregnancies')
+                    
+            if len(Pregnancies) >  1:
+                with st.echo:
+                 st.write("Please enter a valid number of pregnancies")
+            else:
+                st.write("")
+                
+                with col2:
+                    Glucose = st.text_input('Glucose Level (mg/dl)')
+                    
+            if len(Glucose) >  4:
+                st.error("Please enter a valid Glucose level")
+            else:
+                st.write("")
+                # code for Prediction    
+                with col3:
+                    BloodPressure = st.text_input('Blood Pressure value (mm Hg)')
+            if len(BloodPressure) >  4:
+                st.error("Please enter a valid bood pressure level")
+            else:
+                st.write("")
+                with col1:
+                    SkinThickness = st.text_input('Skin Thickness value')
+            if len(SkinThickness) >  2:
+                st.error("Please enter a valid skin thickness value")
+            else:
+                st.write("")
+                with col2:
+                    Insulin = st.text_input('Insulin Level (mu U/ml)')
+            if len(Insulin) >  2:
+                st.error("Please enter a valid Insulin level")
+            else:
+                st.write("")
+                with col3:
+                    BMI = st.text_input('BMI value (kg/m^2)')
+            if len(BMI) >  3:
+                st.error("Please enter a valid BMI")
+            else:
+                st.write("")
+                with col1:
+                    DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+            
+                with col2:
+                    Age = st.text_input('Age of the Person (years)')
+            if len(Age) >  3:
+                st.error("Please enter a valid age")
+            else:
+                st.write("")
+            
+                diab_diagnosis = ''
+            
+                # creating a button for Prediction
+            
+                if st.button('Diabetes Test Result'):
 
         user_input = [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin,
                       BMI, DiabetesPedigreeFunction, Age]
