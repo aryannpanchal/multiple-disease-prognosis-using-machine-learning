@@ -295,3 +295,7 @@ if selected == "Parkinsons Prediction":
 
     st.success(parkinsons_diagnosis)
     
+if count(Pregnancies) > 1:
+    st.error("Please fix the pregnancy value")
+else:
+    st.write("")
