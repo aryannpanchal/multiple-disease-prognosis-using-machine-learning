@@ -46,6 +46,6 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/aryannpanchal/aryannpanchal/output/snake.svg" alt="Snake animation" />
+<img src="/snake.svg" alt="Snake animation" />
 
 ###
